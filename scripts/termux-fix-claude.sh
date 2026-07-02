@@ -173,7 +173,8 @@ WRAPEOF
   echo "Running smoke test: claude --version"
   if "$PREFIX/bin/claude" --version; then
     echo ""
-    echo "Done. Claude Code v${VERSION} is installed. Run: claude"
+    echo "Done. Claude Code v${VERSION} is installed."
+    echo "Run \"hash -r\" (or restart Termux) so your shell forgets the old npm path, then run: claude"
     echo "To update later, re-run this script (auto-update is intentionally disabled)."
   else
     echo ""
